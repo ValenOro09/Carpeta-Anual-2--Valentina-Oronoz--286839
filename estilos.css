@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.Cinzel {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
+}
+.bebas-neue-regular {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+ /* GENERAL */ 
+header{
+    background-color: rgb(12, 12, 12);
+    color: azure;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    position: relative;
+}
+#menu-toggle {
+    display: none;
+}
+#nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+#nav ul li a {
+    text-decoration: none;
+}
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+header p{
+    font-family: "Cinzel Decorative", serif;
+    font-size: 1.2em;
+}
+nav a{
+    position: relative;
+    color: azure;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.2s ease-in-out;
+    font-size: 1.2em;
+}
+nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: cadetblue;
+    transition: width 0.3s ease-in-out;
+} 
+nav a:hover {
+    color: cadetblue; 
+}
+nav a:hover::after {
+    width: 100%;
+}
+nav a.active{
+    color: cadetblue;
+}
+nav a.active::after {
+    width: 100%; 
+    background-color: cadetblue;
+}
+
+body{
+    background-color: #212020;
+    color: azure;
+}
+footer{
+    background-color: rgb(12, 12, 12);
+    color: azure;
+    text-align: center;
+    padding: 25px;
+}
+img{
+    width: 100%;
+}
+h1{
+    font-family: "Bebas Neue", serif;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+}
+h2{
+    margin-left: 2em;
+    color: rgb(200, 245, 247);
+}
+header div{
+    display: none;
+}
+
+/* INICIO */
+#sobremi{
+    display: flex;
+    height: 80vh;
+    padding: 3em;
+    margin-left: 20em;
+    margin-right: 20em;
+}
+#sobremi img{
+    padding-right: 2em;
+    border-radius: 30px;
+}
+#sobremi p{
+    font-size: 18px;
+    text-align: justify;
+}
+#principio{
+    display: flex;
+   justify-content: center;
+   padding: 1em;
+   margin-bottom: 1em;
+}
+#principio h2{
+    margin-top: 3em;
+    font-size: 1.5em;
+}
+
+/* VIDEO */
+.animaciones{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 20px;
+}
+.animaciones video {
+    width: 35%; 
+    height: auto; 
+    object-fit: cover;
+}
+.videos{
+    padding: 2em;
+    text-align: left;
+}
+.videos video{
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5em;
+}
+
+/* EDITORIAL */
+#revista {
+    display: flex;
+    justify-content: center; 
+    gap: 40px; 
+}
+.contenedor {
+    margin-top: 2em;
+}
+#revista video {
+    width: 40vw; 
+    height: auto; 
+}
+#catalogo {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+}
+#catalogo video {
+    width: 40vw; 
+    height: auto; 
+}
+
+/* FOTOGRAFÍA */
+.gatofeliz{
+    width: 100%;
+    max-width: 150px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+.carrusel{
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+#frase{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#frase p{
+    margin-top: 2.5em;
+    font-size: 1.5em;
+}
+.otrasfotos{
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+#otrasfotos{
+    text-align: left;
+    margin-top: 3em;
+}
+#otrasfotos video{
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+.boton {
+    margin: auto;
+    margin-bottom: 1.5em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+.boton :hover{
+    background-color: cadetblue;
+    color: rgb(12, 12, 12);
+    border-radius: 10px;
+    width: 25vh;
+    padding: 1em;
+}
+.boton a{
+    color: azure;
+    transition: color 0.2s ease-in-out;
+    border-radius: 10px;
+    background-color: black;
+    width: 25vh;
+    padding: 1em;
+    text-align: center;
+}
+.responsive-video {
+    display: none !important;
+}
+
+/* TABLET */
+@media all and (max-width:1024px){
+    /* GENERAL */ 
+    nav a{
+        font-size: 1em;
+    }
+    h2{
+        font-size: 0.9em;
+    }
+
+    /* INICIO */
+    #sobremi{
+        height: 50vh;
+        padding: 2.5em;
+        margin-left: 7em;
+        margin-right: 7em;
+    }
+    #sobremi p{
+        font-size: 0.7em;
+    }
+    #principio video{
+        width: 15vh;
+    }
+    #principio h2{
+        font-size: 1em;
+    }
+
+    /* VIDEO */
+    .h1videos{
+        margin-bottom: 0.2em;
+    }
+    .videos video{
+        width: 70vh;
+    }
+
+    /* FOTOGRAFÍA */
+    .gatofeliz{
+        max-width: 110px;
+    }
+    #frase{
+        gap: 2px;
+    }
+    #frase p{
+        font-size: 1em;
+    }
+    .boton a{
+        width: 30vh;
+    }
+    .responsive-video {
+        display: none;
+    }
+}
+@media all and (max-width:768px){
+    /* GENERAL */ 
+    #nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        text-align: center;
+    }
+    #nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    #nav ul li{
+        padding: 15px 0;
+    }
+    #menu-toggle:checked + .hamburger + #nav {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+    h2{
+        font-size: 0.6em;
+    }
+    h1{
+        font-size: 1.8em;
+    }
+    footer p{
+        font-size: 0.5em;
+    }
+
+    /* INICIO */
+    #sobremi{
+        height: 30vh;
+        padding: 2em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    #sobremi p{
+        font-size: 0.3em;
+    }
+    #principio video{
+        width: 10vh;
+    }
+    #principio h2{
+        font-size: 0.4em;
+    }
+    #todoinicio{
+        height: 80vh;
+    }
+
+    /* VIDEO */
+    .h1videos{
+        margin-bottom: 0.1em;
+    }
+    .videos video{
+        width: 40vh;
+    }
+
+    /* EDITORIAL */
+    #revista {
+        gap: 5px; 
+    }
+    #revista video {
+        width: 20vw;
+    }
+    #catalogo {
+        gap: 5px; 
+    }
+    #catalogo video {
+         width: 20vw; 
+    }
+    .contenedor {
+        width: 40vh;
+    }
+
+    /* FOTOGRAFÍA */
+    .gatofeliz{
+        max-width: 80px;
+        padding-right: 1em;
+    }
+    #frase{
+        gap: 1px;
+    }
+    #frase p{
+        font-size: 0.7em;
+        padding-left: 1em;
+    }
+    .boton a{
+        width: 35vh;
+        font-size: 0.7em;
+    }
+    #otrasfotos video{
+        display: none;
+    }
+    .carrusel{
+        display: block;
+        margin: 0 auto;
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+        width: 50vh;
+    }
+    #videocelular{
+        display: block;
+    }
+    .responsive-video {
+        display: block !important;
+        width: 35vh;
+    }
+    
+}
